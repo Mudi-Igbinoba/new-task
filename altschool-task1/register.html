@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>Register Page</title>
+    </head>
+    <body>
+        <header>
+            <p class="logo"><a href='index.html'>Mudi</a></p>
+
+            <nav>
+                <ul class="nav-links">
+                    <input type="checkbox" id="checkbox_toggle" />
+                    <label for="checkbox_toggle" class="bars">
+                        <img src="/images/bars-solid.svg" alt="" />
+                    </label>
+
+                    <div id="menu">
+                        <li class="home">
+                            <a href="/">About Me &#9662</a>
+                            <ul class="dropdown">
+                                <li><a href="#about">Intro</a></li>
+                                <li><a href="#edu">Education</a></li>
+                                <li><a href="#exp">Experience</a></li>
+                                <li>
+                                    <a href="#skills">Hobbies & Skills</a>
+                                </li>
+                                <li><a href="#contact-me">Contact Me</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li class="projects">
+                            <a href="#">Projects &#9662</a>
+                            <ul class="dropdown">
+                                <li>
+                                    <a href="calc-table.html"
+                                        >Calculator-table</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="calc-flex.html"
+                                        >Calculator-flex</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="register">
+            <h1>Register Page</h1>
+
+            <form>
+                <div class="row">
+                    <div>
+                        <label for="first-name">First Name</label><br />
+                        <input
+                            type="text"
+                            name="first-name"
+                            id="first-name"
+                            required
+                        />
+                    </div>
+
+                    <div>
+                        <label for="last-name">Last Name</label><br />
+                        <input
+                            type="text"
+                            name="last-name"
+                            id="last-name"
+                            required
+                        />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div>
+                        <label for="phone">Phone</label><br />
+                        <input type="tel" name="phone" id="phone" required />
+                    </div>
+
+                    <div class="select">
+                        <label for="gender">Gender</label><br />
+                        <select name="gender" id="gender" required>
+                            <option value="pick a gender" selected disabled>
+                                Pick a gender
+                            </option>
+                            <option value="female">Female</option>
+                            <option value="male">Male</option>
+                            <option value="nil">Prefer not to say</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div>
+                        <label for="country">Country</label><br />
+                        <input
+                            type="text"
+                            name="country"
+                            id="country"
+                            required
+                        />
+                    </div>
+                    <div>
+                        <label for="state">State/province</label><br />
+                        <input type="text" name="state" id="state" required />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div>
+                        <label for="username">Username</label><br />
+                        <input
+                            type="text"
+                            name="username"
+                            id="username"
+                            required
+                        />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div>
+                        <label for="password">Password</label><br />
+                        <input
+                            type="password"
+                            name="password"
+                            id="password"
+                            required
+                        />
+                    </div>
+                    <div>
+                        <label for="confirm">Confirm password</label><br />
+                        <input
+                            type="password"
+                            name="confirm"
+                            id="confirm"
+                            required
+                        />
+                    </div>
+                </div>
+                <button type="submit">Register</button>
+            </form>
+        </section>
+    </body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>Login Page</title>
+    </head>
+    <body>
+        <header>
+            <p class="logo"><a href='index.html'>Mudi</a></p>
+            <nav>
+                <ul class="nav-links">
+                    <input type="checkbox" id="checkbox_toggle" />
+                    <label for="checkbox_toggle" class="bars">
+                        <img src="/images/bars-solid.svg" alt="" />
+                    </label>
+
+                    <div id="menu">
+                        <li class="home">
+                            <a href="/">About Me &#9662</a>
+                            <ul class="dropdown">
+                                <li><a href="#about">Intro</a></li>
+                                <li><a href="#edu">Education</a></li>
+                                <li><a href="#exp">Experience</a></li>
+                                <li>
+                                    <a href="#skills">Hobbies & Skills</a>
+                                </li>
+                                <li><a href="#contact-me">Contact Me</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li class="projects">
+                            <a href="#">Projects &#9662</a>
+                            <ul class="dropdown">
+                                <li>
+                                    <a href="calc-table.html"
+                                        >Calculator-table</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="calc-flex.html"
+                                        >Calculator-flex</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="login">
+            <h1>Login Page</h1>
+            <form>
+                <div>
+                    <label for="username">Username</label>
+                    <br />
+                    <input
+                        type="text"
+                        name="username"
+                        id="username"
+                        required
+                        minlength="4"
+                    />
+                    <br /><br />
+                    <label for="password">Password</label>
+                    <br />
+                    <input
+                        type="password"
+                        name="password"
+                        id="password"
+                        required
+                        minlength="6"
+                    /><br /><br />
+
+                    <button type="submit">Sign In</button>
+                </div>
+            </form>
+        </section>
+    </body>
+</html>

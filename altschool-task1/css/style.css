@@ -1,0 +1,603 @@
+/* General */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    height: 100%;
+    font-family: 'Montserrat', Cambria, Cochin, Georgia, Times,
+        'Times New Roman', serif;
+    background-color: #c9c7c7;
+    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+}
+
+#homepage {
+    padding-bottom: 50px;
+}
+/* Header */
+header {
+    padding: 5px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header a {
+    text-decoration: none;
+}
+
+/* Logo */
+.logo {
+    font-family: 'Lora';
+    font-size: 30px;
+    line-height: 1;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.logo a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Navbar Menu */
+#menu {
+    display: flex;
+    gap: 0.5em;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+#menu li {
+    padding: 5px 8px;
+}
+
+#menu li:hover {
+    border-top-left-radius: 0;
+    border-top-right-radius: 13px;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 0;
+    background-color: #4b6cb7;
+    transition: 0.5s ease;
+}
+.nav-links a {
+    color: #fff;
+}
+
+/* Dropdown Menu */
+.home,
+.projects {
+    position: relative;
+}
+
+.dropdown {
+    padding: 0.5em 0;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 8px;
+    top: 30px;
+    display: none;
+    width: max-content;
+}
+
+.dropdown li + li {
+    margin-top: 10px;
+}
+
+.dropdown li {
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: left;
+}
+.nav-links .dropdown a {
+    color: #182848;
+}
+
+#menu .dropdown li:hover {
+    border-radius: 0;
+}
+
+#menu .dropdown li:hover a {
+    color: #fff;
+}
+
+.home:hover .dropdown,
+.projects:hover .dropdown {
+    display: block;
+}
+
+/* Checkbox */
+input[type='checkbox'] {
+    display: none;
+}
+
+.bars img {
+    width: 24px;
+}
+
+.bars {
+    display: none;
+    cursor: pointer;
+}
+
+/* About Me */
+#about,
+#edu,
+#exp,
+#skills,
+#contact-me {
+    padding: 20px 25px;
+    background-color: #fff;
+    margin: auto;
+    margin-top: 25px;
+    width: 60%;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 2px 5px 10px 5px rgba(0, 0, 0, 0.253);
+}
+
+#edu,
+#skills {
+    display: flex;
+    padding: 50px;
+    margin-top: 50px;
+    justify-content: space-around;
+    text-align: left;
+}
+
+#exp {
+    text-align: left;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about img {
+    width: 50%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#edu ul,
+#exp ul,
+#skills ul {
+    padding: 0;
+}
+
+#about h2,
+#edu h2,
+#exp h2,
+#skills h2 {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #255991;
+}
+
+#about p,
+#edu li,
+#exp li,
+#skills li {
+    font-weight: 500;
+    word-wrap: break-word;
+    padding: 5px 25px;
+    line-height: 2;
+}
+
+#edu li,
+#exp li,
+#skills li {
+    padding: 0;
+}
+
+#about span {
+    font-weight: 600;
+    padding: 3px;
+    background-color: #acc8e5;
+    color: #182848;
+    border-radius: 5px;
+}
+
+/* Other general styles */
+#login,
+#register,
+#calc-table,
+#calc-flex,
+#contact {
+    padding: 25px 0;
+}
+
+#login h1,
+#register h1,
+#contact h1,
+#calc-table h1,
+#calc-flex h1 {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    padding: 10px 0;
+    color: #fff;
+    text-align: center;
+}
+
+/* Contact Page */
+#contact .main {
+    width: 60%;
+    padding: 25px;
+    padding-top: 15px;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 5px 10px 5px rgba(0, 0, 0, 0.253);
+}
+
+#contact p,
+#contact-me p {
+    font-weight: 500;
+    color: #255991;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#contact input,
+#contact textarea,
+#contact-me input,
+#contact-me textarea,
+#contact-me select {
+    border: none;
+    border-bottom: 2px solid #acc8e5;
+    padding: 10px 0px;
+    padding-left: 5px;
+    width: 97%;
+    color: #191919;
+    font-family: Montserrat;
+}
+
+#contact-me select {
+    padding-left: 0;
+}
+
+#contact textarea,
+#contact-me textarea {
+    border: 2px solid #acc8e5;
+    width: 96%;
+    margin-top: 10px;
+}
+
+#contact .social {
+    padding-top: 20px;
+    text-align: center;
+}
+
+#contact .social p {
+    text-transform: none;
+    font-size: 14px;
+}
+
+#contact .icons a {
+    text-decoration: none;
+    padding: 10px;
+    color: none;
+}
+
+#contact .icons img {
+    width: 24px;
+}
+
+/* Login & Register Page */
+#login form,
+#register form {
+    width: 60%;
+    padding: 25px;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 5px 10px 5px rgba(0, 0, 0, 0.253);
+}
+
+#register .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+#register div {
+    margin-top: 10px;
+}
+
+#register .row div {
+    width: 50%;
+}
+
+#register .row div:nth-of-type(2) {
+    margin-left: 10px;
+}
+
+#login label,
+#register label {
+    font-weight: 500;
+    color: #255991;
+}
+
+#register #username {
+    width: 195%;
+}
+
+#login input,
+#register input,
+#register #gender {
+    margin-top: 8px;
+    padding: 8px 10px;
+    border: none;
+    width: 95%;
+    border-radius: 50px;
+    background-color: #e9e8e8;
+    color: #191919;
+    font-family: Montserrat;
+}
+
+#register #gender {
+    width: 100%;
+    appearance: none;
+    background-image: url('../images/arrow.svg');
+    background-position-x: 97%;
+    background-size: 3%;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    font-weight: 500;
+}
+
+#register #gender option {
+    font-weight: 500;
+    box-shadow: none;
+}
+
+#login button,
+#register button,
+#contact button,
+#contact-me button {
+    border: none;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    font-family: Montserrat;
+    padding: 8px 25px;
+    border-radius: 50px;
+    background-color: #255991;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    box-shadow: 2px 5px 2px #6e6d6d21;
+}
+
+#register button {
+    margin-top: 30px;
+}
+
+#login button:hover,
+#register button:hover,
+#contact button:hover,
+#contact-me button:hover {
+    background-color: #acc8e5;
+    color: #255991;
+}
+
+/* Calculator - table method */
+#calc-table,
+#calc-flex {
+    font-weight: bold;
+}
+
+#calc-table table {
+    background-color: #fff;
+    width: 250px;
+    height: 300px;
+    padding: 12px;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 2px 5px 10px 5px rgba(0, 0, 0, 0.253);
+}
+
+#calc-table tr {
+    margin: 2px;
+}
+
+#calc-table td {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background-color: #acc8e5;
+    color: #112a46;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 2px;
+}
+
+#calc-table .entry {
+    background-color: #e9e8e8;
+    color: #191919;
+    text-align: right;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: auto;
+}
+
+#calc-table .entry-container {
+    position: relative;
+    bottom: 5px;
+}
+
+#calc-table .result {
+    background-color: #255991;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+#calc-table .result-container {
+    position: relative;
+    top: 5px;
+}
+
+#calc-table .math {
+    background-color: #255991;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+/* Calculator(Flex) */
+#calc-flex .table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+    width: max-content;
+    height: max-content;
+    padding: 15px;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 2px 5px 10px 5px rgba(0, 0, 0, 0.253);
+}
+
+#calc-flex .row {
+    display: flex;
+    padding: 2px;
+}
+
+#calc-flex .row div {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #acc8e5;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 2px;
+}
+
+#calc-flex .row p {
+    color: #112a46;
+}
+
+#calc-flex .entry {
+    background-color: #e9e8e8;
+    color: #191919;
+    align-self: stretch;
+    border-radius: 5px;
+    padding: 12px;
+    margin-bottom: 5px;
+}
+
+#calc-flex .result {
+    background-color: #255991;
+    align-self: stretch;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+#calc-flex .result p {
+    margin: auto;
+    color: #fff;
+    padding: 10px 0px;
+}
+
+#calc-flex .row .math {
+    background-color: #255991;
+}
+
+#calc-flex .row .math p {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+/* Media Queries */
+/* Tablet View */
+@media only screen and (max-width: 992px) {
+    /* Register & login page */
+    #register .row div:nth-of-type(2) {
+        margin-left: 15px;
+    }
+
+    #register #gender {
+        width: 105%;
+        background-position-x: 95%;
+        background-size: 4%;
+    }
+
+    #menu {
+        display: none;
+        position: absolute;
+        right: 0;
+        left: 0;
+        margin-top: 10px;
+        text-align: center;
+        padding: 16px 0;
+        z-index: 100;
+        background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+
+        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.253);
+    }
+
+    #menu li:hover {
+        display: inline-block;
+        transition: 0.3s ease;
+    }
+
+    #menu li + li {
+        margin-top: 15px;
+    }
+
+    input[type='checkbox']:checked ~ #menu {
+        display: block;
+    }
+
+    .bars {
+        display: block;
+    }
+
+    .dropdown {
+        left: -50%;
+        transform: translateX(35%);
+        z-index: 10000;
+    }
+
+    #edu {
+        justify-content: start;
+        flex-wrap: wrap;
+    }
+}
+
+/* Mobile View */
+@media only screen and (max-width: 540px) {
+    /* Register & login page */
+    #register form {
+        width: 80%;
+    }
+
+    #register #gender {
+        background-position-x: 93%;
+        background-size: 5%;
+    }
+
+    #skills {
+        justify-content: start;
+        flex-wrap: wrap;
+    }
+}

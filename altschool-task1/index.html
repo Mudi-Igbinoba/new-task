@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>About Me</title>
+    </head>
+    <body id="homepage">
+        <header>
+            <p class="logo"><a href='index.html'>Mudi</a></p>
+
+            <nav>
+                <ul class="nav-links">
+                    <input type="checkbox" id="checkbox_toggle" />
+                    <label for="checkbox_toggle" class="bars">
+                        <img src="/images/bars-solid.svg" alt="" />
+                    </label>
+
+                    <div id="menu">
+                        <li class="home">
+                            <a href="">About Me &#9662</a>
+                            <ul class="dropdown">
+                                <li><a href="#about">Intro</a></li>
+                                <li><a href="#edu">Education</a></li>
+                                <li><a href="#exp">Experience</a></li>
+                                <li>
+                                    <a href="#skills">Hobbies & Skills</a>
+                                </li>
+                                <li><a href="#contact-me">Contact Me</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li class="projects">
+                            <a href="#">Projects &#9662</a>
+                            <ul class="dropdown">
+                                <li>
+                                    <a href="calc-table.html"
+                                        >Calculator-table</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="calc-flex.html"
+                                        >Calculator-flex</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="about">
+                <h2>About Me</h2>
+    
+                <img src="/images/me.jpg" alt="Me" class="about-pic">
+
+                <p>My name is <span>Osamudiame Ruth Igbinoba.</span> I am a <span>frontend developer</span> with a year's experience of implementing user interface designs into fully functional websites.</p>
+                <p><span>My Goals:</span> To learn more about concepts in frontend development, to become a better developer and to be more confident in skills.</p>
+        </section>
+
+        <section id="edu">
+            <div>
+                <h2>Education</h2>
+
+                <ul>
+                    <li>Bachelor's Degree, Chemical Engineering - University of Benin (2015 - 2021).</li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>Certificates</h2>
+
+                <ul>
+                    <li>Intro to Programmming Nanodegree, Udacity.</li>
+                    <li>Soft Skills Training, Jobberman Nigeria.</li>
+                    <li>Responsive Web Design Certificate, freeCodeCamp</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="exp">
+            <h2>Job Experience</h2>
+            <ul>
+                <li>Web Development Intern, <strong>BlueSense</strong> (2022 - present)</li>
+                <li>Participant, <strong>Hacktoberfest</strong> (Oct 2021 - Nov 2021)</li>
+                <li>Web Development Trainee, <strong>KodeCamp</strong> (Aug 2021 - Dec 2021)</li>
+                <li>Graphics Design Intern, <strong>FemCode Africa</strong> (May 2020 - May 2021)</li>
+            </ul>
+        </section>
+
+        <section id="skills">
+            <div>
+                <h2>Hobbies</h2>
+
+                <ul>
+                    <li>Watching movies and series.</li>
+                    <li>Listening to music.</li>
+                    <li>Reading novels.</li>
+                    <li>Browsing the web.</li>
+                    <li>Coding</li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>Skills</h2>
+
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>React JS</li>
+                    <li>Bootstrap</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact-me">
+            <div class="main">
+                <p>Send me a message</p>
+                <form action="">
+                    <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        placeholder="Name"
+                        required
+                    /><br /><br />
+                    <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="Email"
+                        required
+                    /><br /><br />
+                    <select name="priority" id="priority" required>
+                        <option value="priority" selected disabled>Priority
+                        </option>
+                        <option value="request">Request</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="inquiries">Inquiries</option>
+                    </select><br><br>
+                    <textarea
+                        name="message"
+                        id="message"
+                        rows="10"
+                        placeholder="Message"
+                        required
+                    ></textarea
+                    ><br /><br />
+                    <button type="submit">Send Message</button>
+                </form>
+    </body>
+</html>

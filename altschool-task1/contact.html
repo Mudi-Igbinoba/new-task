@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>Contact Page</title>
+    </head>
+    <body>
+        <header>
+           <p class="logo"><a href='index.html'>Mudi</a></p>
+
+            <nav>
+                <ul class="nav-links">
+                    <input type="checkbox" id="checkbox_toggle" />
+                    <label for="checkbox_toggle" class="bars">
+                        <img src="/images/bars-solid.svg" alt="" />
+                    </label>
+
+                    <div id="menu">
+                        <li class="home">
+                            <a href="/">About Me &#9662</a>
+                            <ul class="dropdown">
+                                <li><a href="#about">Intro</a></li>
+                                <li><a href="#edu">Education</a></li>
+                                <li><a href="#exp">Experience</a></li>
+                                <li>
+                                    <a href="#skills">Hobbies & Skills</a>
+                                </li>
+                                <li><a href="#contact-me">Contact Me</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li class="projects">
+                            <a href="#">Projects &#9662</a>
+                            <ul class="dropdown">
+                                <li>
+                                    <a href="calc-table.html"
+                                        >Calculator-table</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="calc-flex.html"
+                                        >Calculator-flex</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="contact">
+            <h1>Contact Page</h1>
+
+            <div class="main">
+                <p>Send me a message</p>
+                <form action="">
+                    <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        placeholder="Name"
+                        required
+                    /><br /><br />
+                    <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="Email"
+                        required
+                    /><br /><br />
+                    <textarea
+                        name="message"
+                        id="message"
+                        rows="10"
+                        placeholder="Message"
+                        required
+                    ></textarea
+                    ><br /><br />
+                    <button type="submit">Send Message</button>
+                </form>
+
+                <div class="social">
+                    <p>Feel free to reach out to me on:</p>
+                    <div class="icons">
+                        <a
+                            href="https://www.linkedin.com/in/osamudiame-igbinoba/"
+                        >
+                            <img
+                                src="../images/linkedin.svg"
+                                class="social-icon"
+                                alt="LinkedIn"
+                            />
+                        </a>
+
+                        <a href="https://github.com/Mudi-Igbinoba">
+                            <img
+                                src="../images/github.svg"
+                                class="social-icon"
+                                alt="Github"
+                            />
+                        </a>
+
+                        <a href="https://www.twitter.com/mudi_igbinoba">
+                            <img
+                                src="../images/twitter.svg"
+                                class="social-icon"
+                                alt="Twitter"
+                            />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>Calculator (Flex method)</title>
+    </head>
+    <body>
+        <header>
+            <p class="logo"><a href='index.html'>Mudi</a></p>
+
+            <nav>
+                <ul class="nav-links">
+                    <input type="checkbox" id="checkbox_toggle" />
+                    <label for="checkbox_toggle" class="bars">
+                        <img src="/images/bars-solid.svg" alt="" />
+                    </label>
+
+                    <div id="menu">
+                        <li class="home">
+                            <a href="/">About Me &#9662</a>
+                            <ul class="dropdown">
+                                <li><a href="#about">Intro</a></li>
+                                <li><a href="#edu">Education</a></li>
+                                <li><a href="#exp">Experience</a></li>
+                                <li>
+                                    <a href="#skills">Hobbies & Skills</a>
+                                </li>
+                                <li><a href="#contact-me">Contact Me</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li class="projects">
+                            <a href="#">Projects &#9662</a>
+                            <ul class="dropdown">
+                                <li>
+                                    <a href="calc-table.html"
+                                        >Calculator-table</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="calc-flex.html"
+                                        >Calculator-flex</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="calc-flex">
+            <h1>Calculator - made with flex method</h1>
+            <div class="table">
+                <div class="row entry">
+                    <p class="entry-p"></p>
+                </div>
+
+                <div class="row">
+                    <div><p>1</p></div>
+                    <div><p>2</p></div>
+                    <div><p>3</p></div>
+                    <div class="math"><p>/</p></div>
+                </div>
+
+                <div class="row">
+                    <div><p>4</p></div>
+                    <div><p>5</p></div>
+                    <div><p>6</p></div>
+                    <div class="math"><p>*</p></div>
+                </div>
+
+                <div class="row">
+                    <div><p>7</p></div>
+                    <div><p>8</p></div>
+                    <div><p>9</p></div>
+                    <div class="math"><p>-</p></div>
+                </div>
+                <div class="row">
+                    <div class="math"><p>%</p></div>
+                    <div><p>0</p></div>
+                    <div class="math"><p>.</p></div>
+                    <div class="math"><p>+</p></div>
+                </div>
+
+                <div class="row result">
+                    <p>=</p>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
